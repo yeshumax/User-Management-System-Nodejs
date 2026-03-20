@@ -18,7 +18,7 @@ const User_1 = __importDefault(require("../models/User"));
 // Simple token generation
 const generateToken = (id) => {
     return jsonwebtoken_1.default.sign({ id }, process.env.JWT_SECRET || 'secret123', {
-        expiresIn: '30d',
+        expiresIn: '20d',
     });
 };
 // @desc    Login user
